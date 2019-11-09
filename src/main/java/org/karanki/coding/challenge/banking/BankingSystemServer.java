@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * Spring boot application server. The bootstrap point for the banking application.
  * 
- * @author Koti R. Karanki
+ * @author Koti Karanki (http://kotikaranki.com)
  * @since Oct 2019
  *
  */
