@@ -5,11 +5,17 @@ import java.util.Date;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping(path = "/test")
+@RequestMapping(path = "/server")
 @RestController
-public class TestController {
+public class ServerStatusController {
 
-	@RequestMapping(path = "/time")
+	
+	@RequestMapping(path = "/health")
+	public String getHealth() {
+		return "OK & GREEN";
+	}
+	
+	@RequestMapping(path = "/datetime")
 	public String getTime() {
 		return new Date().toString();
 	}
